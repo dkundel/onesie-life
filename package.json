@@ -1,0 +1,27 @@
+{
+  "name": "onesie-life",
+  "version": "1.0.0",
+  "description": "🔓 Onesie.life is a fictional social media network that has intentional vulnerabilities",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkundel/onesie-life.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkundel/onesie-life/issues"
+  },
+  "homepage": "https://github.com/dkundel/onesie-life#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^0.4.0",
+    "marko": "^4.5.3"
+  }
+}
