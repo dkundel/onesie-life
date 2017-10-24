@@ -60,3 +60,13 @@ header {
   font-family: 'Architects Daughter', cursive;
   font-size: 120%;
 }
+
+footer {
+  text-align: center;
+  font-size: 0.7em;
+  font-family: 'Architects Daughter', cursive;
+}
+
+footer p {
+  margin: 0;
+}
