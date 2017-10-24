@@ -1,0 +1,29 @@
+<include('../shared/layout.marko')>
+  <@body>
+    <h1>Welcome Home!</h1>
+    <p>Your name is ${input.name}, you role: ${input.role}</p>
+    <form id="messageForm" class="post-form" action="/post" method="POST">
+      <fieldset>
+        <label for="messageInput">Write your fluffy message...</label>
+        <textarea name="message" id="messageInput" rows="10"/>
+        <button type="submit">Spread Fluffiness</button>
+      </fieldset>
+    </form>
+    <h3>Timeline of fluffiness</h3>
+    <div class="timeline" id="timeline">
+      <for(entry in input.posts)>
+        <div class="timeline-entry">
+          <div class="timeline-entry--author">
+            <b>${entry.name}</b> wrote...
+          </div>
+          <blockquote class="timeline-entry--content">$!{entry.message}</blockquote>
+        </div>
+      </for>
+    </div>
+  </@body>
+  <@scripts>
+    <script src="https://unpkg.com/js-cookie@2.1.4/src/js.cookie.js"/>
+    <script src="https://unpkg.com/base64-js@1.2.1/base64js.min.js"/>
+    <script src="/scripts/post.js"/>
+  </@scripts>
+</include>

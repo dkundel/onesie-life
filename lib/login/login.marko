@@ -1,0 +1,17 @@
+<include('../shared/layout.marko')>
+  <@body>
+    <h1>Welcome to Onesie Life!</h1>
+    <p>Please log in to post something</p>
+    <form method="POST" action="/login">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"/>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"/>
+      </div>
+      <button type="submit">Log In</button>
+    </form>
+  </@body>
+</include>
