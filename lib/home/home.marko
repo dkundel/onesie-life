@@ -1,7 +1,10 @@
 <include('../shared/layout.marko')>
   <@body>
-    <h1>Welcome Home!</h1>
-    <p>Your name is ${input.name}, you role: ${input.role}</p>
+    <p>
+      Your name is
+      <span class="user-role">${input.role === 'admin' ? 'all mighty ' : 'fluffy '}</span>
+      <span class="user-name">${input.name}</span>
+    </p>
     <form id="messageForm" class="post-form" action="/post" method="POST">
       <fieldset>
         <label for="messageInput">Write your fluffy message...</label>
@@ -14,7 +17,9 @@
       <for(entry in input.posts)>
         <div class="timeline-entry">
           <div class="timeline-entry--author">
-            <b>${entry.name}</b> wrote...
+            <img class="timeline-entry--image" src="https://api.adorable.io/avatars/50/${entry.name}" width="50" height="50"/>
+            <br/>
+            <b>${entry.name}</b>
           </div>
           <blockquote class="timeline-entry--content">$!{entry.message}</blockquote>
         </div>

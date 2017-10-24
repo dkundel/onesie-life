@@ -1,0 +1,62 @@
+html,
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #9b4dca;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2342334a' fill-opacity='0.5' fill-rule='evenodd'/%3E%3C/svg%3E");
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  width: 1000px;
+  background: white;
+  box-shadow: 5px 5px 5px rgba(33, 33, 33, 0.2);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.post-form {
+  box-shadow: 0px 2px 8px rgba(200, 200, 200, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.timeline-entry:first-of-type {
+  border-top: 1px solid #eee;
+}
+
+.timeline-entry {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  min-height: 113px;
+}
+
+.timeline-entry--author {
+  text-align: center;
+  padding-right: 20px;
+}
+
+.timeline-entry--image {
+  border-radius: 100%;
+}
+
+.user-name,
+.timeline-entry--author {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 120%;
+}
