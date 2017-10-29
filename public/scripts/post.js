@@ -9,9 +9,15 @@ async function submitForm(evt) {
   evt.preventDefault();
   const postData = { message: evt.target.message.value };
   const body = new URLSearchParams(postData);
+  const _csrf = Cookies.get('_csrf');
+  const headers = new Headers();
+  if (_csrf) {
+    headers.append('X-CSRF-Token', _csrf);
+  }
   const resp = await fetch('/post', {
     method: 'POST',
     body,
+    headers,
     credentials: 'include'
   });
   const data = await resp.json();
