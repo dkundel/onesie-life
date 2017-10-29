@@ -22,9 +22,11 @@
     "argon2": "^0.16.2",
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
     "express": "^4.16.2",
     "express-csp-header": "^2.1.0",
     "jsonwebtoken": "^0.4.0",
+    "marked": "^0.3.3",
     "marko": "^4.5.3",
     "twilio": "^3.9.0"
   }
