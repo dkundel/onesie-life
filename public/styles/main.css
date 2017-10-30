@@ -46,6 +46,12 @@ header {
   min-height: 113px;
 }
 
+.timeline-entry--content img {
+  max-height: 300px;
+  max-width: 700px;
+  display: block;
+}
+
 .timeline-entry--author {
   text-align: center;
   padding-right: 20px;
