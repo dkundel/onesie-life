@@ -28,8 +28,10 @@ async function submitForm(evt) {
 function getPostTemplate({ name, message }) {
   return `<div class="timeline-entry">
   <div class="timeline-entry--author">
-    <b>${name}</b> wrote...
-  </div>
+  <img class="timeline-entry--image" src="https://api.adorable.io/avatars/50/${name}" width="50" height="50"/>
+  <br/>
+  <b>${name}</b>
+</div>
   <blockquote class="timeline-entry--content">${message}</blockquote>
   </div>`;
 }
