@@ -4,7 +4,7 @@
 
 ---
 
-This is an example application used by [Dominik Kundel](https://github.com/dkundel) in his [Introduction to Web Security talk](https://github.com/intro-web-security). It has intenionally a [set of vulnerabilities](#vulnerabilities) to highlight different attack vectors and as well as ways to fix them.
+This is an example application used by [Dominik Kundel](https://github.com/dkundel) in his [Introduction to Web Security talk](https://github.com/dkundel/intro-web-security). It has intenionally a [set of vulnerabilities](#vulnerabilities) to highlight different attack vectors and as well as ways to fix them.
 
 If you find any additional attack vectors, feel free to create an issue for it or alternatively create a pull request for this README to add it to the [list of vulnerabilities](#vulnerabilities).
 
