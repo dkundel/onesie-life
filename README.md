@@ -20,11 +20,56 @@ There is a variety of vulnerabilites present in this application. Check out the 
 
 ## Security Measurements
 
-[TODO]
+- [Content Security Policy](docs/security/content-security-policy.md)
 
 ## Resources
 
-[TODO]
+- [Open Web Application Security Project (OWASP)](https://www.owasp.org/index.php/Main_Page). Extensive Wiki around all web security related topics
+- [OWASP Common Attacks List](https://www.owasp.org/index.php/Category:Attack)
+- [Slides of my intro to web security talk](https://github.com/dkundel/intro-web-security)
+- [Google Web Fundamentals Security](https://developers.google.com/web/fundamentals/security/)
+- [Gruyere Codelab](https://google-gruyere.appspot.com/). A Codelab by Google teaching you different things around security
+- [`goof`](https://github.com/snyk/goof). A vulnerable demo app by Synk.io
+- [`helmet`](https://helmetjs.github.io/). A Node.js module to set security related headers for your [`express`](https://npm.im/express) server
+- [Snyk.io](https://snyk.io). A tool to detect vulnerabilities in your projects by scanning your dependencies
+- [Greenkeeper.io](https://greenkeeper.io/). A tool to keep your dependencies up to date
+
+## Setup
+
+This application is built with Node.js and uses Twilio Sync as a database at the moment. 
+
+### Prerequisites
+- [Node.js](https://nodejs.org) & [npm](https://npmjs.com)
+- A Twilio account - [Sign up here](https://www.twilio.com/try-twilio)
+
+Make sure you have the following values [stored in your environment variables](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html):
+
+```bash
+# Your Twilio Account SID
+TWILIO_ACCOUNT_SID=
+# A Twilio API Key
+TWILIO_API_KEY=
+# A Twilio API Secret
+TWILIO_API_SECRET=
+# The SID of your Twilio Sync Service (can be 'default')
+TWILIO_SYNC_SERVICE=default
+```
+
+### Setup
+
+```bash
+git clone git@github.com:dkundel/onesie-life.git
+cd onesie-life
+npm install
+```
+
+### Start Server
+
+```bash
+npm start
+```
+
+### Open Page http://localhost:3000
 
 ## License
 
