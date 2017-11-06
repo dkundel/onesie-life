@@ -29,6 +29,7 @@ There is a variety of vulnerabilites present in this application. Check out the 
 - [Slides of my intro to web security talk](https://github.com/dkundel/intro-web-security)
 - [Google Web Fundamentals Security](https://developers.google.com/web/fundamentals/security/)
 - [Gruyere Codelab](https://google-gruyere.appspot.com/). A Codelab by Google teaching you different things around security
+- [SecurityHeaders.io](https://securityheaders.io). Analyzes the HTTP headers of your application for security aspects
 - [`goof`](https://github.com/snyk/goof). A vulnerable demo app by Synk.io
 - [`helmet`](https://helmetjs.github.io/). A Node.js module to set security related headers for your [`express`](https://npm.im/express) server
 - [Snyk.io](https://snyk.io). A tool to detect vulnerabilities in your projects by scanning your dependencies
