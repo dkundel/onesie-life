@@ -29,7 +29,7 @@ This is just a common behavior that appears when you are using forms submission 
 The solution is to use CSRF tokens. Those are tokens that are unique per request. In order to have a valid `POST` request the same CSRF token has to be send via a cookie and either in the `POST` body or via an HTTP header. 
 
 
-### Resources
+### Resources/References
 - [OWASP: Cross-Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF))
 - [OWASP: Testing for CSRF](https://www.owasp.org/index.php/Testing_for_CSRF_(OTG-SESS-005))
 - [OWASP: CSRF Prevention Cheat Sheet](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet)
