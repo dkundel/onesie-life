@@ -1,10 +1,17 @@
 <include('../shared/layout.marko')>
   <@body>
-    <p>
-      Your name is
-      <span class="user-role">${input.role === 'admin' ? 'all mighty ' : 'fluffy '}</span>
-      <span class="user-name">${input.name}</span>
-    </p>
+    <if(input.role === 'admin')>
+      <p>
+        <h3>Welcome to Admin mode <span class="user-name">${input.name}</span> 😎</h3>
+        <img src="https://media.giphy.com/media/BS9dyAosqbyb6/giphy.gif" alt="dog riding on a jetski">
+      </p>
+    </if>
+    <else>
+      <p>
+        👋 Welcome back
+        <span class="user-name">${input.name}</span>
+      </p>
+    </else>
     <form id="messageForm" class="post-form" action="/post" method="POST">
       <fieldset>
         <label for="messageInput">Write your fluffy message...</label>
